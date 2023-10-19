@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0;
+}
+
+
+.userstats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.userstats h3 {
+    color: #22d3ee;
+}
+
+.userstats h1 {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+
+/* xs */
+@media (min-width: 475px) {
+    .userstats h1 {
+        font-size: 1.659rem;
+    }
+}
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+@media (min-width: 1024px) {
+    .userstats h1 {
+        font-size: 2rem;
+    }
+}
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

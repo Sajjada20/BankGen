@@ -1,0 +1,163 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    margin-top: 2rem;
+    padding: 2rem 0;
+    box-shadow: 0px 0px 3px white;
+}
+
+.footer-div-1 {
+    display: none;
+}
+.footer-div-1 h4 {
+    width: 100%;
+    text-align: start;
+    max-width: 250px;
+    line-height: calc(1em + 0.5rem);
+
+}
+.footer-div-1 img {
+    width: 60px;
+}
+.footer-div-2 {
+    width: 60%;
+    max-width: 750px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    text-align: start;
+    gap: 2rem;
+}
+
+.footer-link-div  h1 {
+    font-size: 1.5rem;
+}
+#footer-a {
+    font-size: 0.8rem;
+    transition: all .5s;
+}
+#footer-a:hover {
+    color: #10b981;
+}
+.div-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.2rem;
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* size */
+
+
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+@media (min-width: 640px) {
+    .footer-link-div  h1 {
+        font-size: 1.8rem;
+    }
+    #footer-a {
+        font-size: 0.9756rem;
+    }
+
+
+    /* all */
+    .footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .footer-div-1 {
+        width: 30%;
+        max-width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 2.5rem;
+    }
+}
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+@media (min-width: 1001px) {
+    .footer-div-1 {
+        width: 30%;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 2.5rem;
+    }
+    .footer-div-1 h4 {
+        text-align: start;
+        max-width: 250px;
+        line-height: calc(1em + 0.5rem);
+    }
+    .footer-div-1 img {
+        width: 60px;
+    }
+    .footer-div-2 {
+        width: 60%;
+        max-width: 750px;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        text-align: start;
+    }
+    
+    
+    .div-link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.2rem;
+        margin-top: 1rem;
+    }
+    .footer-link-div  h1 {
+        font-size: 2rem;
+    }
+    #footer-a {
+        font-size: 1rem;
+    }
+}
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

@@ -1,0 +1,118 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+:root {
+  --clr-dark: #020617;
+  --clr-light: #f1f5f9;
+  --clr-d-light: #cbd5e1;
+  --clr-slate400: #94a3b8;
+  --clr-slate600: #475569;
+  --clr-slate800: #1e293b;
+  --clr-rose: #e11d48;
+  --clr-indigo: #4f46e5;
+  --clr-green: #16a34a;
+  --clr-yellow: #ca8a04;
+
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+  --size-11xl: 12rem;
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-rose);
+  font-weight: 600;
+}
+strong {
+  color: var(--clr-indigo);
+}
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
+
+
+
+body {
+  margin: 0;
+  padding: 0%;
+  height: 100vh;
+  color: var(--clr-d-light);
+  overflow-x: hidden;
+  background-color: var(--clr-dark);
+  font-family: 'Poppins', sans-serif;
+}
+
+/*  font family
+font-family: 'Libre Baskerville', serif;
+font-family: 'Lilita One', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Signika', sans-serif;
+font-family: 'Young Serif', serif;
+ */
+
+
+
+
+
+
+
+
+/* scoll bar */
+body::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: transparent;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+}
+
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: var(--clr-rose);
+  border-radius: 6px;
+}

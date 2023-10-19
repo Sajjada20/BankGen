@@ -1,0 +1,291 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+:root {
+    --clr-dark: #020617;
+    --clr-light: #f1f5f9;
+    --clr-slate400: #94a3b8;
+    --clr-slate600: #475569;
+    --clr-slate800: #1e293b;
+    --clr-rose: #e11d48;
+    --clr-indigo: #4f46e5;
+    --clr-green: #16a34a;
+    --clr-yellow: #ca8a04;
+
+
+
+    
+    --size-xxs: 0.5rem;
+    --size-xs: 0.75rem;
+    --size-sm: 0.875rem;
+    --size-base: 1rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+    --size-11xl: 12rem;
+  }
+
+
+
+
+
+.contact-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+    width: 100%;
+}
+
+.contact-child-div {
+    margin-top: 1rem;  /* anders ging het kon ik de theme niet veranderen en was lelijk */
+    width: 70%;
+    max-width: 475px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+}
+
+.contact-input-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#contact-h1 {
+    font-size: var(--size-2xl);
+}
+#contact-p {
+    font-size: var(--size-base);
+    color: var(--clr-slate600);
+}
+
+
+.contact-input-child {
+    width: 60%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.contact-input-kleine {
+    width: 60%;
+    max-width: 350px;
+}
+
+#enige-input-id {
+    padding-bottom: 40%;
+}
+
+.contact-input{
+    padding: 0.4rem 0.8rem;
+    width: 100%;
+    border-radius: 6px;
+    color: var(--clr-slate400);
+    border: 1px solid var(--clr-rose);
+    background-color: transparent;
+    text-transform: capitalize;
+}
+#input-email-id {
+    text-transform: none;
+}
+
+.contact-input::placeholder {
+    color: var(--clr-slate400);
+}
+
+
+
+#a-contact {
+    color: var(--clr-light);
+}
+
+/* light mode */
+
+.contact-input-light {
+    padding: 0.4rem 0.8rem;
+    width: 100%;
+    border-radius: 6px;
+    color: var(--clr-slate800);
+    border: 2px solid var(--clr-rose);
+    background-color: transparent;
+    text-transform: capitalize;
+}
+.contact-input-light::placeholder {
+    color: var(--clr-slate800);
+}
+#contact-l {
+    color: var(--clr-slate800);
+}
+
+
+
+
+
+
+.btnt {
+    font-family: 'General Sans', sans-serif;
+    background-color: var(--clr-indigo);
+    color: var(--clr-light);
+    border-style: none;
+    padding: 8px 16px;
+    border-radius: 7px;
+    text-transform: capitalize;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px var(--clr-indigo);
+    transition: transform 0.4s, box-shadow 0.3s;
+    transition: 0.3s;
+}
+.btnt:hover {
+    transform: scale(1.1);
+    background-color: var(--clr-rose);
+    box-shadow: 0px 0px 11px var(--clr-rose);
+}
+
+
+
+
+
+
+
+
+
+
+
+  /* xs */
+@media (min-width: 475px) {
+    #contact-h1 {
+        font-size: 1.687rem;
+    }
+    #contact-p,
+    #contact-l {
+        font-size: var(--size-base);
+    }
+}
+  /* md */
+@media (min-width: 768px) {
+    #contact-h1 {
+        font-size: 1.787rem;
+    }
+    #contact-p,
+    #contact-l {
+        font-size: var(--size-base);
+    }
+
+    .contact-child-div {
+        max-width: 31.25rem;        
+    }
+    .contact-div-hoofd {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+    .contact-input-child {
+        width: 60%;
+        max-width: 450px;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .contact-input-kleine {
+        width: 60%;
+        max-width: 450px;
+    }
+
+    #enige-input-id {
+        padding-bottom: 30%;
+    }
+
+}
+  
+  /* lg */
+@media (min-width: 1024px) {
+    .contact-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        width: 100%;
+    }
+    
+    .contact-child-div {
+        text-align: start;
+        margin-top: 0;
+        width: 40%;
+        max-width: 450px;
+        align-items: flex-start;
+        gap: 1.5rem;
+        
+    }
+    
+    .contact-input-div {
+        width: 40%;
+        max-width: 475px;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .contact-input-child {
+        width: 100%;
+        max-width: 350px;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .contact-input-kleine {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    #enige-input-id {
+        padding-bottom: 40%;
+    }
+
+}
+  
+ /* xl */
+@media (min-width: 1280px) {
+    .contact-div {
+        gap: 3rem;
+
+    }
+
+    
+    .contact-input-div {
+        width: 40%;
+        max-width: 475px;
+        gap: 1rem;
+    }
+    
+    .contact-input-child {
+        width: 100%;
+        max-width: 350px;
+        gap: 1rem;
+    }
+    .contact-input-kleine {
+        width: 100%;
+        max-width: 350px;
+    }
+
+}
