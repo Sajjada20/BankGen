@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
-import { quotes } from '../assets'
+import { like2, likeFillRed, quotes } from '../assets'
 import '../styles/feedback.css'
-import {like2, likeFillRed} from '../assets/index'
 
 
 
