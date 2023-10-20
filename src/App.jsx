@@ -5,9 +5,7 @@ import {Home, About, Contact} from './pages/index'
 import {Navbar, Footer} from './components/index';
 
 
-
 function App() {
-
   return (
     <div className='App'>
       <Router>

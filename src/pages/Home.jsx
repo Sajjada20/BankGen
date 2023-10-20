@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/home.css'
 import {discount, robot, bill, google, apple} from '../assets/index'
 import {Navbar, UserStats, Footer} from '../components/index';
-import { features, stats } from '../index';
+import { features, stats, HomeInfo } from '../index';
 import { useNavigate } from 'react-router-dom';
 import Features from '../components/Features';
 
@@ -41,9 +41,9 @@ function Home() {
       {/* features */}
       <div className='handleTheRest-div'>
         <div className='handle-div-1'>
-          <h5>You do the business, <br/> we'll handle the money.</h5>
-          <p>With the right credit card, you can improve your financial life by building credit, earning rewards and saving money. But with hundreds of credit cards on the market.</p>
-          <button id='btn' onClick={() => navigate('/contact')}>Get Started</button>
+          <h5>{HomeInfo.middle.title}<br/>{HomeInfo.middle.titleSecond}</h5>
+          <p>{HomeInfo.middle.pargraph}</p>
+          <button id='btn' onClick={() => navigate('/contact')}>{HomeInfo.middle.button}</button>
         </div>
         <div className='home-features-div'>
           {features.map((features) => {
@@ -59,8 +59,8 @@ function Home() {
       <div className='pay-method'>
           <img src={bill} id='home-image-bill' />
         <div className='pay-method-div-info'>
-          <h4>Easily control your <br id='pay-break'/>  billing & invoicing. </h4>
-          <p>We consider the payment methods you'll offer your customers when you start your business. This is an important part of managing your business cash flow and meeting your customer's needs.</p>
+          <h4>{HomeInfo.below.title}<br id='pay-break'/>{HomeInfo.below.titleSecond}</h4>
+          <p>{HomeInfo.below.pargraph}</p>
           <div>
             <img src={apple}  id='home-store-icon' />
             <img src={google} id='home-store-icon'  />

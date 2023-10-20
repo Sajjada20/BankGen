@@ -1,5 +1,72 @@
 import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star, sajjad } from "../src/assets/index";
 
+
+
+
+
+
+/* -------------  about  ------------------ */
+export const aboutInfo = {
+  above: {
+    title: "Welcome to BankGen, Your Financial Partner for the Future!",
+    titleSecond: 'Find a better card deal in few easy steps',
+    pargraph: "We've been researching and comparing credit cards for over 15 years. You can easily compare more than 270 Australian credit cards using our free tools. When you find one that suits, we'll take you securely to the bank's website.",
+    button: "Get Started", 
+  },
+  middle: {
+    title: "What people are saying about us",
+  },
+  below: {
+    title: "Come try our service now!",
+    pargraph: "Everything you need to accept card payments and grow your business anywhere on the planet.",
+    button: "Get Started",
+  }
+}
+
+/* -------------  Home  ------------------ */
+export const HomeInfo = {
+  middle: {
+    title: "You do the business, ",
+    titleSecond: " we'll handle the money.",
+    pargraph: "With the right credit card, you can improve your financial life by building credit, earning rewards and saving money. But with hundreds of credit cards on the market.",
+    button: "Get Started", 
+  },
+  below: {
+    title: "Easily control your ",
+    titleSecond: " billing & invoicing. ",
+    pargraph: "We consider the payment methods you'll offer your customers when you start your business. This is an important part of managing your business cash flow and meeting your customer's needs.",
+  }
+}
+
+/* -------------  Navbar  ------------------ */
+export const NavbarInfo = {
+  NavbarName: {
+    first: " Home",
+    second: " about us",
+    third: " contact",
+  },
+}
+/* ------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* etc */
+
 export const features = [
   {
     id: "feature-1",
@@ -28,26 +95,29 @@ export const feedback = [
   {
     id: "feedback-1",
     content:
-      "Money is a resource that, when managed wisely, can open doors to opportunities and provide security for your life's journey.",
+      "This bank is the best. Secure, user-friendly, and top-notch support. Highly recommended!",
     name: "Herman Jensen",
-    title: "Founder & Leader",
+    title: "Client",
+    likeCount: 723,
     img: people01,
   },
   {
     id: "feedback-2",
     content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: "Sajjad Alami",
-    title: "Founder & Leader",
-    img: sajjad,
+    "When it comes to banks, this one stands out. Security is paramount, the user experience is a breeze, and their support is simply the best. I strongly recommend it",
+    name: "Kenn Gallagher",
+    title: "Client",
+    likeCount: 1196,
+    img: people02,
   },
   {
     id: "feedback-3",
     content:
-      "Money is a tool; use it wisely to build your future.",
-    name: "Kenn Gallagher",
-    title: "Founder & Leader",
-    img: people02,
+      "Client-approved: 'The Next Gen Payment Method.' Expert recommendations for the perfect credit card. Like having a personal finance advisor!",
+    name: "Sajjad",
+    title: "Client",
+    likeCount: 8314,
+    img: sajjad,
   },
 ];
 
@@ -70,23 +140,23 @@ export const footerLinks = [
     links: [
       {
         name: "Content",
-        link: "https://www.hoobank.com/content/",
+        link: " ",
       },
       {
         name: "How it Works",
-        link: "https://www.hoobank.com/how-it-works/",
+        link: " ",
       },
       {
         name: "Create",
-        link: "https://www.hoobank.com/create/",
+        link: " ",
       },
       {
         name: "Explore",
-        link: "https://www.hoobank.com/explore/",
+        link: " ",
       },
       {
         name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
+        link: " ",
       },
     ],
   },
@@ -95,23 +165,23 @@ export const footerLinks = [
     links: [
       {
         name: "Help Center",
-        link: "https://www.hoobank.com/help-center/",
+        link: " ",
       },
       {
         name: "Partners",
-        link: "https://www.hoobank.com/partners/",
+        link: " ",
       },
       {
         name: "Suggestions",
-        link: "https://www.hoobank.com/suggestions/",
+        link: " ",
       },
       {
         name: "Blog",
-        link: "https://www.hoobank.com/blog/",
+        link: " ",
       },
       {
         name: "Newsletters",
-        link: "https://www.hoobank.com/newsletters/",
+        link: " ",
       },
     ],
   },
@@ -120,11 +190,11 @@ export const footerLinks = [
     links: [
       {
         name: "Our Partner",
-        link: "https://www.hoobank.com/our-partner/",
+        link: " ",
       },
       {
         name: "Become a Partner",
-        link: "https://www.hoobank.com/become-a-partner/",
+        link: " ",
       },
       {
         name: 'Sajjad'
@@ -155,6 +225,8 @@ export const socialMedia = [
     link: "https://www.linkedin.com/",
   },
 ];
+
+
 
 export const clients = [
   {

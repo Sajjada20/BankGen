@@ -9,6 +9,7 @@
 #feeback-h3 {
     font-size: 1.3rem;
     width: 90%;
+    text-transform: capitalize;
 }
 
 .feedback {
@@ -140,6 +141,36 @@
     transform: scale(1.1);
     box-shadow: 0px 0px 7px #b910b6;
 }
+
+
+
+
+
+
+
+
+/* like */
+.space-around-div-feedback {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.like-div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+#like {
+    transition: all 0.3s;
+}
+#like:active {
+    transform: rotateZ(360deg);
+}
+
 
 
 /* xs */
