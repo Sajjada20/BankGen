@@ -7,14 +7,13 @@ import { useNavigate } from 'react-router-dom'
 
 
 
-const url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
 
 
 function Footer() {
   const navigate = useNavigate();
 
   const handleNavigate = () => {
-    navigate('/contact')
+    navigate('/error message')
   }
   return (
     <div className='footer'>
@@ -32,7 +31,7 @@ function Footer() {
                 {links.map((link) => {
                   return (
                     <div onClick={handleNavigate}>
-                      <a id='footer-a' href={url} target='_blank'>{link.name}</a>
+                      <a id='footer-a' target='_blank'>{link.name}</a>
                     </div>
                     );
                   })}

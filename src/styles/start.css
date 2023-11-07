@@ -39,78 +39,56 @@
 
 
 
-.contact-div {
+.contact-main-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 3.5rem;
     width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 10rem;
 }
-
-.contact-child-div {
-    margin-top: 1rem;  /* anders ging het kon ik de theme niet veranderen en was lelijk */
-    width: 70%;
-    max-width: 475px;
+.contact-div-text {
+    width: 80%;
+    max-width: 550px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    
-}
-
-.contact-input-div {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: start;
+    text-align: start;
     gap: 1rem;
 }
 
-#contact-h1 {
-    font-size: var(--size-2xl);
-}
-#contact-p {
-    font-size: var(--size-base);
-    color: var(--clr-slate600);
-}
 
-
-.contact-input-child {
-    width: 60%;
-    max-width: 350px;
+.contact-div-input {
+    width: 80%;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     gap: 1rem;
 }
-.contact-input-kleine {
-    width: 60%;
-    max-width: 350px;
-}
-
-#enige-input-id {
-    padding-bottom: 40%;
-}
-
-.contact-input{
-    padding: 0.4rem 0.8rem;
+.input-div-name-subject {
     width: 100%;
-    border-radius: 6px;
-    color: var(--clr-slate400);
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+
+.contact-div-input input {
+    padding: .5rem .9rem;
+    border-radius: 5px;
     border: 1px solid var(--clr-rose);
-    background-color: transparent;
-    text-transform: capitalize;
+    background: transparent;
 }
-#input-email-id {
-    text-transform: none;
+.contact-div-input input::placeholder {
+    color: var(--clr-slate400);
 }
 
-.contact-input::placeholder {
-    color: var(--clr-slate400);
+#message-contact {
+    padding-bottom: 50px;
 }
 
 
@@ -119,23 +97,20 @@
     color: var(--clr-light);
 }
 
-/* light mode */
+#contact-h1 {
+    font-size: var(--size-2xl);
+}
+#contact-p {
+    font-size: var(--size-base);
+    color: var(--clr-slate600);
+    line-height: calc(1em +8px);
 
-.contact-input-light {
-    padding: 0.4rem 0.8rem;
-    width: 100%;
-    border-radius: 6px;
-    color: var(--clr-slate800);
-    border: 2px solid var(--clr-rose);
-    background-color: transparent;
-    text-transform: capitalize;
 }
-.contact-input-light::placeholder {
-    color: var(--clr-slate800);
-}
-#contact-l {
-    color: var(--clr-slate800);
-}
+
+
+
+
+
 
 
 
@@ -161,7 +136,10 @@
     box-shadow: 0px 0px 11px var(--clr-rose);
 }
 
-
+#btn {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
 
 
   /* xs */
@@ -174,6 +152,30 @@
         font-size: var(--size-base);
     }
 }
+@media (min-width: 640px) {
+    .contact-main-div {
+        gap: 5rem;
+    }
+    .input-div-name-subject {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: none;
+        gap: .8rem;
+    }
+    .contact-div-text {
+        width: 100%;
+        max-width: 600px;
+        gap: 1rem;
+    }
+    
+    .contact-div-input {
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+
   /* md */
 @media (min-width: 768px) {
     #contact-h1 {
@@ -184,101 +186,63 @@
         font-size: var(--size-base);
     }
 
-    .contact-child-div {
-        max-width: 31.25rem;        
-    }
-    .contact-div-hoofd {
-        height: 80vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    } 
-    .contact-input-child {
-        width: 60%;
-        max-width: 450px;
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-    }
-    .contact-input-kleine {
-        width: 60%;
-        max-width: 450px;
-    }
 
-    #enige-input-id {
-        padding-bottom: 30%;
-    }
+
 
 }
+
   
   /* lg */
 @media (min-width: 1024px) {
-    .contact-div {
-        display: flex;
+    
+    .contact-main-div {
         flex-direction: row;
         justify-content: center;
-        align-items: center;
-        gap: 1.5rem;
-        width: 100%;
+        gap: 2.5rem;
+        margin: 10rem 0;
     }
-    
-    .contact-child-div {
-        text-align: start;
-        margin-top: 0;
-        width: 40%;
+    .contact-div-text {
+        max-width: 420px;
+        gap: 1.5rem;
+    }
+    .contact-div-input {
         max-width: 450px;
-        align-items: flex-start;
-        gap: 1.5rem;
-        
+        gap: 1.3rem;
     }
-    
-    .contact-input-div {
-        width: 40%;
-        max-width: 475px;
-        flex-direction: column;
+    .input-div-name-subject {
         gap: 1rem;
     }
     
-    .contact-input-child {
-        width: 100%;
-        max-width: 350px;
-        flex-direction: row;
-        gap: 1rem;
+    
+    .contact-div-input input {
+        padding: .8rem 1.3rem;
+        border-radius: 8px;
     }
-    .contact-input-kleine {
-        width: 100%;
-        max-width: 350px;
-    }
-
-    #enige-input-id {
-        padding-bottom: 40%;
+    
+    #message-contact {
+        padding-bottom: 60px;
     }
 
+    #contact-h1 {
+        font-size: 2.5rem;
+    }
+    #contact-p,
+    #contact-l {
+        font-size: 1.02rem;
+    }
+    
 }
   
  /* xl */
-@media (min-width: 1280px) {
-    .contact-div {
-        gap: 3rem;
-
+ @media (min-width: 1280px) { 
+    .contact-main-div {
+        margin: 10rem 0;
+        justify-content: space-around;
     }
-
-    
-    .contact-input-div {
-        width: 40%;
-        max-width: 475px;
-        gap: 1rem;
+    .contact-div-text {
+        max-width: 550px;
     }
-    
-    .contact-input-child {
-        width: 100%;
-        max-width: 350px;
-        gap: 1rem;
+    .contact-div-input {
+        max-width: 550px;
     }
-    .contact-input-kleine {
-        width: 100%;
-        max-width: 350px;
-    }
-
-}
+ }

@@ -168,7 +168,7 @@
     transition: all 0.3s;
 }
 #like:active {
-    transform: rotateZ(360deg);
+    transform: rotateZ(180deg);
 }
 
 

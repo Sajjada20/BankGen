@@ -6,7 +6,10 @@
     padding-right: 5%;
     width: 100%;
     height: 80px;
-    background-color: transparent;
+    background-color: #020617;
+    position: fixed;
+    top: 0%;
+    z-index: 999;
 }
 .navbar-div-logo {
     display: flex;
