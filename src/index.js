@@ -98,7 +98,7 @@ export const feedback = [
       "This bank is the best. Secure, user-friendly, and top-notch support. Highly recommended!",
     name: "Herman Jensen",
     title: "Client",
-    likeCount: 723,
+    likeCount: 758,
     img: people01,
   },
   {

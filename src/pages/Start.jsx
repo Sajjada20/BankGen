@@ -13,9 +13,7 @@ function Contact() {
   })
 
 
-  useEffect(() => {
-    console.log(MainData); 
-  }, [MainData])
+console.log(MainData);
 
   const transferData = (value, id) => {
     setData((prevData) => ({ ...prevData, [id]: value }));
@@ -40,7 +38,9 @@ function Contact() {
         </div>
           <input type="email"  placeholder='Email*'   onChange={(e) => transferData(e.target.value, 'email')} />
           <input type="text" id='message-contact'  placeholder='Message*'  onChange={(e) => transferData(e.target.value, 'message')} />
-          <button id='btn' onClick={dataOverzet} > Submit</button>
+          <button id='btn' onClick={dataOverzet}>
+            <span id='btn-contact'> submit </span>
+          </button>
       </div>
     </div>
   );

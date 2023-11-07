@@ -1,20 +1,24 @@
 import React, { useState } from 'react'
 import { like2, likeFillRed, quotes } from '../assets'
 import '../styles/feedback.css'
+import { useMyContext } from '../context/Mycontext'
 
 
 
-function Feedback({id, content, name, title, img, likeCount=99}) {
+function Feedback(props) {
+  const {id, content, name, title, img, likeCount} = props.data;
   const [count, setCount] = useState(likeCount)
-  const [IsTrue, setIsTrue] = useState(true)
+  const {handleToggle, isFalse} = useMyContext()
+  const index = props.idx
+
 
   function handleCount() {
-    setIsTrue((prevBool) => (!prevBool)) /* !bool */
+    handleToggle(index) /* !bool */
 
-    if (IsTrue===true) {  /* likeCount+1 => liked */
+    if (isFalse[index]===false) {  /* likeCount+1 => liked */
       setCount((prevNum) => prevNum+1)
     }
-    else if (IsTrue===false) { /* likeCount-1 => !liked */
+    else if (isFalse[index]===true) { /* likeCount-1 => !liked */
       setCount((prevNum) => prevNum-1)
     }
   }
@@ -25,7 +29,7 @@ function Feedback({id, content, name, title, img, likeCount=99}) {
       <img src={quotes} id='quote' />
       <div className='like-div' onClick={handleCount} >
         <h5>{count}</h5>
-        <img src={IsTrue ? like2 : likeFillRed} id='like' />
+        <img src={!isFalse[index] ? like2 : likeFillRed} id='like' />
         </div>
       </div>
       <p>{content}</p>

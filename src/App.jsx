@@ -1,13 +1,15 @@
-import { useState } from 'react'
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import {Home, About, Contact} from './pages/index'
 import {Navbar, Footer, Error} from './components/index';
+import Mycontext from './context/Mycontext';
+
 
 
 function App() {
   return (
     <div className='App'>
+      <Mycontext>
       <Router>
         <Navbar/>
         <Routes>
@@ -18,6 +20,7 @@ function App() {
         </Routes>
       <Footer/>
       </Router>
+      </Mycontext>
     </div>
   )
 }

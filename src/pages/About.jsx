@@ -35,10 +35,9 @@ function About() {
       <div className='about-user-div'>
         <h3 id='feeback-h3'>{aboutInfo.middle.title}</h3>
         <div className='about-feedback'>
-          {feedback.map((data) => {
-            const {id, content, name, title, img, likeCount} = data;
+          {feedback.map((data, index) => {
             return (
-              <Feedback id={id} content={content} name={name} title={title} img={img} likeCount={likeCount}/>
+              <Feedback data={data} idx={index}/>
             )
           })}
         </div>
