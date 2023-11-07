@@ -27,7 +27,7 @@ import people03 from "./people03.png";
 import sajjad from './sajjad.jpeg'
 import like from "./like.svg";
 import likeFill from "./likefill.svg";
-import likeFillRed from "./likeFillRed.svg";
+import likeFillRed from "./likefillRed.svg";
 import like2 from "./download.svg";
 
 
